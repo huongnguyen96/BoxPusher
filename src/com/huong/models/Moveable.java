@@ -1,6 +1,8 @@
 package com.huong.models;
 
 public interface Moveable {
-	public void move(String orientation);
-
+	public void moveLeft();
+	public void moveRight();
+	public void moveDow();
+	public void moveUp();
 }
