@@ -1,8 +1,8 @@
 package com.huong.models;
 
 public class GameObject {
-	private String name;
-	private Location location;
+	protected String name;
+	protected Location location;
 	public GameObject(){
 		
 	}
