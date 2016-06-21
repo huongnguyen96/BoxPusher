@@ -31,4 +31,9 @@ public class Location {
 		this.col = col;
 	}
 	
+	public boolean equals(Location anotherLocation) {
+		if(this.row == anotherLocation.row && this.col == anotherLocation.col)
+			return true;
+		return false;
+	}
 }
