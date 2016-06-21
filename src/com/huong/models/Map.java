@@ -14,12 +14,20 @@ public class Map {
 	public void display() {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
-				System.out.println(arrLocation[i][j] + " ");
+				System.out.print(arrLocation[i][j] + " ");
 			}
 			System.out.println();
 		}
 
 	}
+	
+	public void initScene(Location playerLocation, Location boxLocation , Location storageLocation){
+		arrLocation[playerLocation.getRow()][playerLocation.getCol()] = "P";
+		arrLocation[boxLocation.getRow()][boxLocation.getCol()] = "B";
+		arrLocation[storageLocation.getRow()][storageLocation.getCol()] = "S";
+		
+	}
+	
 
 	public void update(Location playerLocation) {
 		for (int i = 0; i < 4; i++) {

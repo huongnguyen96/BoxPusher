@@ -15,7 +15,7 @@ public class MoveableGameObject extends GameObject implements Moveable {
 	}
 
 	@Override
-	public void moveDow() {
+	public void moveDown() {
 		location.setCol(location.getCol() + 1);
 
 	}
